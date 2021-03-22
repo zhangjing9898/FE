@@ -69,3 +69,50 @@ JavaScript 是单线程的，如果 JS 都是同步代码执行意味着什么�
 
 ### Generator
 
+
+
+Generator 函数可以看出是异步任务的容器，需要暂停的地方，都用 yield 语法来标注。
+
+generator由 function* 定义（注意多出的 * 号）
+
+```
+function* gen() {
+    let a = yield 111;
+    console.log(a);
+    let b = yield 222;
+    console.log(b);
+    let c = yield 333;
+    console.log(c);
+    let d = yield 444;
+    console.log(d);
+}
+let t = gen();
+t.next(1); //第一次调用next函数时，传递的参数无效，故无打印结果
+t.next(2); // a输出2;
+t.next(3); // b输出3; 
+t.next(4); // c输出4;
+t.next(5); // d输出5;
+```
+
+### async/await
+
+
+
+ES6 之后 ES7 中又提出了新的异步解决方案：async/await，，async 是 Generator 函数的语法糖。
+
+
+
+async/await 写起来使得 JS 的异步代码看起来像同步代码，其实异步编程发展的目标就是让异步逻辑的代码看起来像同步一样容易理解
+
+
+
+## 总结
+
+
+
+| 异步编程方式 | 总结                                    |
+| ------------ | --------------------------------------- |
+| 回调函数     | 远古时期使用的方法                      |
+| Promise      | ES6新增，解决地狱回调                   |
+| Generator    | 和yield配合使用，返回迭代器             |
+| async/await  | async返回promise对象，await控制执行顺序 |
