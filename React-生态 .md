@@ -37,7 +37,9 @@ React 的一大优势就是**生态的丰富性**，有众多可以满足各式�
     - [emotion](https://emotion.sh/) 提供 props 接口消灭内联样式（或者这么说：通过操作 React 的 props 操作 CSS），[例子](https://www.jianshu.com/p/d54853c92e76)
     - [styled-components](https://zhuanlan.zhihu.com/p/28876652) 通过模板字符串提供基础的样式组件
 
-![image](https://intranetproxy.alipay.com/skylark/lark/0/2021/png/129546/1617333085719-f73ee170-0ad8-45a8-a5cb-9796a595817c.png)
+![image](https://user-images.githubusercontent.com/24557166/113377679-92675880-93a7-11eb-808d-fa3d9e6f8ac6.png)
+
+![image](![image](https://user-images.githubusercontent.com/24557166/113377682-94c9b280-93a7-11eb-80a3-8cff9159c5a0.png)
 
 - 基础组件库：中后台使用 [Antd](https://ant.design/)；To C的话，还是得看组内有什么基础组件了...
 - 功能组件：
