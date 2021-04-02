@@ -15,7 +15,7 @@
 - 样式：有两个解决方案
    - **CSS 模块化**
       - CSS 模块化主要由 css-loader 完成
-   - **CSS in JS **
+   - **CSS in JS**
       - 而 CSS in JS 比较流行的方案有 emotion 和  styled-components
       - [emotion](https://emotion.sh/) 提供 props 接口消灭内联样式（或者这么说：通过操作 React 的 props 操作 CSS），[例子](https://www.jianshu.com/p/d54853c92e76)
       - [styled-components](https://zhuanlan.zhihu.com/p/28876652) 通过模板字符串提供基础的样式组件
